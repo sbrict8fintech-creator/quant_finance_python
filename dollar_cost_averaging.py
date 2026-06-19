@@ -1,0 +1,10 @@
+current_tc=float(input("What is the current total cost? : "))
+current_no_of_shares=int(input("How many shares do you have currently? : "))
+current_avg_cost=current_tc/current_no_of_shares
+current_market_price=float(input("What is the current market price? : "))
+print()
+print(f"You can average the cost between ${current_avg_cost} and ${current_market_price}")
+print()
+expected=float(input("What is your expected average cost? : "))
+change_in_shares=(current_tc-(expected*current_no_of_shares))//(expected-current_market_price)
+print(f"Then buy {change_in_shares:.0f} shares more.")
